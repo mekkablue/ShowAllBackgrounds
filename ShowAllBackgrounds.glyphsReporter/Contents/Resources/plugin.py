@@ -30,7 +30,7 @@ class ShowAllBackgrounds(ReporterPlugin):
 		# NSShiftKeyMask | NSControlKeyMask | NSCommandKeyMask | NSAlternateKeyMask
 
 	@objc.python_method
-	def inactiveLayer(self, layer):
+	def inactiveLayerBackground(self, layer):
 		NSColor.colorWithRed_green_blue_alpha_(.8, .1, .2, .3).set()
 		if layer.background.bezierPath:
 			layer.background.bezierPath.fill()

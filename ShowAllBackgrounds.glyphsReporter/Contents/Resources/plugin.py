@@ -4,17 +4,19 @@ from __future__ import division, print_function, unicode_literals
 ###########################################################################################################
 #
 #
-#	Reporter Plugin
+# Reporter Plugin
 #
-#	Read the docs:
-#	https://github.com/schriftgestalt/GlyphsSDK/tree/master/Python%20Templates/Reporter
+# Read the docs:
+# https://github.com/schriftgestalt/GlyphsSDK/tree/master/Python%20Templates/Reporter
 #
 #
 ###########################################################################################################
 
 import objc
-from GlyphsApp import *
-from GlyphsApp.plugins import *
+from GlyphsApp import Glyphs
+from GlyphsApp.plugins import ReporterPlugin
+from AppKit import NSColor, NSCommandKeyMask
+
 
 class ShowAllBackgrounds(ReporterPlugin):
 	@objc.python_method

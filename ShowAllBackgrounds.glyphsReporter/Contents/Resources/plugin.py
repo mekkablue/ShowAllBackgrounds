@@ -42,7 +42,7 @@ class ShowAllBackgrounds(ReporterPlugin):
 
 	def needsExtraMainOutlineDrawingForInactiveLayer_(self, layer):
 		return True
-	
+
 	@objc.python_method
 	def __file__(self):
 		"""Please leave this method unchanged"""

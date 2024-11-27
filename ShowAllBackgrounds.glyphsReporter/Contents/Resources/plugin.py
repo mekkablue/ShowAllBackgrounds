@@ -34,7 +34,7 @@ class ShowAllBackgrounds(ReporterPlugin):
 	@objc.python_method
 	def inactiveLayerBackground(self, layer):
 		NSColor.colorWithRed_green_blue_alpha_(.8, .1, .2, .3).set()
-		if layer.background.bezierPath:
+		if layer.background and layer.background.bezierPath:
 			layer.background.bezierPath.fill()
 		NSColor.colorWithRed_green_blue_alpha_(.8, .4, .0, .3).set()
 		for backgroundComponent in layer.background.components:
